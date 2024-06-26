@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Monospace;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 80px;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 0.75em;
+            color: yellow;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        button
+        {
+            background-color: #6232e7;
+            color: white;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME, {{collector_name}}</h1>
+        <br><br>
+        <div>
+            <h2><u>Collector Details</u></h2>
+            <ul>
+                <li>Name: {{collector_name}}</li><br>
+                <li>Phone number: {{collector_contact1}}, {{collector_contact2}}</li><br>
+                <li>Artworks owned: {{artwork_owned}} by {{by_artist}}</li><br>
+                <li>Details of Auction participated in:<br><br>1.) Date: {{auction_date}}, Artwork bought: {{auction_artwork}}, Price: {{auction_price}}</li><br>
+            </ul>
+        </div>
+    </div>
+    <center><a href="/browse"><button>BROWSE ARTWORKS</button></a></center>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Monospace;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 80px;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 0.75em;
+            color: yellow;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .info
+        {
+            font-size:30px;
+        }
+
+        button
+        {
+            background-color: #09bf06;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ARTWORKS</h1>
+        <br><br>
+        <center>
+            <img src="../static/images/img4.png" height="800" width="600">
+            <br>
+            <div class="info">Artist: {{artist_1}}<br>
+            Artwork: {{artwork_1}}</div>
+            
+            <button>BUY IN AUCTION</button>
+            <br><br><br><br>
+
+            <img src="../static/images/img3.png" height="800" width="600">
+            <br>
+            <div class="info">Artist: {{artist_2}}<br> 
+            Artwork: {{artwork_2}}</div>
+            
+            <button>BUY IN AUCTION</button>
+        </center>
+    </div>
+    
+</body>
+</html>

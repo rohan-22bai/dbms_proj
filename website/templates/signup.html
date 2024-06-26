@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIGN UP</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color:black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            }
+
+        .signup-form {
+            width: 300px;
+            padding: 40px;
+            border: 1px solid #7d3efa;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .signup-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 9px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6b4efc;
+            color: white;
+            cursor: pointer;
+        }
+
+        .signup-form button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form method="POST" class="signup-form">
+        <h3>SIGN UP</h3>
+        <input type="text" placeholder="Full Name" name="firstName" required>
+        <input type="email" placeholder="Email Address" name="email" required>
+        <input type="password" placeholder="Password" name="password1" required>
+        <input type="password" placeholder="Confirm Password" name="password2" required>
+        <br><br>
+        <button type="submit">Sign Up as an Artist</button>
+        <br><br>
+        <button type="submit">Sign Up as a Collector</button>
+    </form>
+
+</body>
+
+</html>
